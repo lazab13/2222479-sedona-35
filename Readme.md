@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Борох](https://up.htmlacademy.ru/htmlcss/35/user/2222479).
-* Наставник: `Неизвестно`.
+* Наставник: [Valentyn Diravka].(https://htmlacademy.ru/profile/id1567679)
 
 ---
 
