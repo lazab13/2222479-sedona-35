@@ -15,6 +15,7 @@
 }
 
 body {
+  font-style: normal;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -22,29 +23,37 @@ body {
   background-color: #F2F2F2;
 }
 
+.visually-hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
 /* HEADER */
 .page-header {
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #000;
+  background-color: #FFF;
 }
 
 .navigation-link {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #000;
+  background-color: #FFF;
 }
 
 .navigation-link.search {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-  background-size: auto;
-  background: #FFFFFF;
+  background-size: 20px 20px;
+  height: 40px;
+  background: #FFF;
 }
 
 .navigation-link.like {
@@ -58,7 +67,7 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 50px;
@@ -68,12 +77,16 @@ body {
 
 /* MAIN */
 .main-index {
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #000;
+  background-color: #FFF;
+}
+
+.baner {
   background-image: url("../images/fon_sedona_header.jpg");
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
-  display: grid
+  height: 485px;
 }
 
 .logo {
@@ -83,51 +96,46 @@ body {
 }
 
 .text-heading {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  gap: 1200px 282px;
+
 }
 
 .text {
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
-  background-color: #FFFFFF;
+  color: #333;
+  background-color: #FFF;
 }
 
 .blue {
-  font-style: normal;
+  background-color: #82B3D3;
+}
+
+.help-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #FFF;
   display: flex;
-}
-
-.blue-text {
   padding: 92px 85px 111px 85px;
 }
 
 /*ADVATAGES*/
 .advantages-description.real_town {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .advantages-description.devils_bridge {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -135,22 +143,20 @@ body {
 
 
 .advantages-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
 .advantages-description {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
 
 .small-area {
@@ -196,7 +202,6 @@ body {
 
 /*APOINTVENT*/
 .apointment-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -207,14 +212,13 @@ body {
 }
 
 .button-search {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 50px;
@@ -230,7 +234,6 @@ body {
 }
 
 .page-main-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -244,7 +247,6 @@ body {
 }
 
 .text-newsletter {
-  font-style: normal;
   font-weight: 400;
   text-align: center;
   color: #FFFFFF;
@@ -259,12 +261,11 @@ body {
 }
 
 .button.newsletter-button {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #82B3D3;
   border-radius: 4px 4px;
   padding: 12px 20px;
@@ -276,14 +277,13 @@ body {
 }
 
 .footer-contacts-address-phone {
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 .button-vk {
@@ -311,93 +311,84 @@ body {
 .main-inner {
   background-image: url("../images/background_footer.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: #FFFFFF;
-  display: grid;
+  background-size: 1200px auto;
+  background-position: 0 center;
+  background-color: #FFF;
 }
 
 
 
 .inner-header-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .breadcrumbs {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .catalog-filter-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .catalog-filter-item {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .button-apply {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #82B3D3;
   border-radius: 4px;
   padding: 8px 50px;
 }
 
 .button-throw_off {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFF;
   border-radius: 4px;
   padding: 8px 50px;
 }
 
 .inner-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
 }
 
 .popular {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: #333;
 }
 
 .product-card-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
@@ -406,24 +397,23 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: #333;
 }
 
 .product-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
+  color: #333;
 }
 
 .product-card-button.button_detailed {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 50px;
@@ -431,13 +421,12 @@ body {
 }
 
 .product-card-button.button_favourites {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #82B3D3;
   border-radius: 4px;
   padding: 8px 50px;
@@ -445,19 +434,17 @@ body {
 }
 
 .text-rating {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: #333;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
 
 .pagination-item {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -468,30 +455,28 @@ body {
 }
 
 .pagination-link.pagination-current {
-  color: #000000;
+  color: #000;
   background-color: #F2F2F2;
 }
 
 .pagination-link {
-  color: #FFFFFF;
+  color: #FFF;
   background-color: #82B3D3;
 }
 
 .page-main-title-catalog {
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: #000;
 }
 
 .text-newsletter-catalog {
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
