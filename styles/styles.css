@@ -95,29 +95,42 @@ ul {
 
 .navigation-user {
   display: flex;
-  margin-left: auto;
-  background-color: red;
+  align-items: center;
+  height: 100%;
   padding: 0;
-}
-
-.navigation-item-5 {
-  background-color: black;
-  padding: 10PX 10PX;
+  margin: 0;
+  margin-left: auto;
 }
 
 .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
-  height: 64px;
+  height: 100%;
+  margin: 0;
+  border: none;
+  background-color: #FFF;
 }
 
 .like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
-  height: 64px;
+  height: 100%;
+  margin: 0;
+  border: none;
+  background-color: #FFF;
 }
 
 .come_here {
+  display: flex;
   border-radius: 4px;
   background: #756157;
+  padding: 8px 34px;
+  margin-left: 20px;
+  margin-top: auto;
 }
 
 /* MAIN */
@@ -743,6 +756,7 @@ main-container {
 .product-card-price {
   font-weight: 400;
   font-size: 18px;
+  text-align: right;
   line-height: 21px;
   color: #333;
   width: 140px;
@@ -780,7 +794,8 @@ main-container {
 .text-rating {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 37px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #333;
@@ -837,10 +852,9 @@ main-container {
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 11px 25px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
