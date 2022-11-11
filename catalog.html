@@ -26,20 +26,24 @@
             </li>
           </ul>
           <ul class="navigation-user">
-            <li class="navigation-item-5">
-              <a class="navigation-link" href="#"> </a>
+            <li class="navigation-item">
+              <button class="navigation-link search" type="button">
+                <img class="navigation-link-icon" src="images/search.svg" width="20" height="20" alt="Поиск">
+              </button>
               <span class="visually-hidden">
                 Поиск
               </span>
             </li>
-            <li class="navigation-item-5">
-              <a class="navigation-link" href="#"> </a>
+            <li class="navigation-item">
+              <button class="navigation-link like" type="button">
+                <img class="navigation-link-icon" src="images/heart.svg" width="20" height="20" alt="Избранное">
+              </button>
               <span class="visually-hidden">
                 Понравилось
               </span>
             </li>
             <li>
-              <a class="navigation-link come_here" href="#">Хочу сюда</a>
+              <a class="navigation-link come_here" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -125,14 +129,48 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <div class="view">
-            <a href="#" class="button">
+            <a href="#" class="button-view">
               <span class="visually-hidden">Показать карточки</span>
+              <svg class="catalog-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
-            <a href="#" class="button button-light">
+            <a href="#" class="button-view button-light">
               <span class="visually-hidden">Показать все</span>
+              <svg class="catalog-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
-            <a href="#" class="button button-light">
+            <a href="#" class="button-view button-light">
               <span class="visually-hidden">Показать список</span>
+              <svg class="catalog-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#000">
+                  <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16
+                 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
           </div>
         </div>
@@ -147,7 +185,7 @@
               <span class="text-price">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
               <a class="product-card-button button_detailed" href="#">подробнее</a>
-              <a class="product-card-button button_favourites" href="#">в избранное</a>
+              <button class="product-card-button button_favourites" type="button">в избранное</button>
               <div class="stars">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -168,7 +206,7 @@
               <span class="text-price">Гостиница</span>
               <span class="product-card-price">От 5000 ₽</span>
               <a class="product-card-button button_detailed" href="#">подробнее</a>
-              <a class="product-card-button button_favourites" href="#">в избранное</a>
+              <button class="product-card-button button_favourites" type="button">в избранное</button>
               <div class="stars">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -189,7 +227,7 @@
               <span class="text-price">Гостиница</span>
               <span class="product-card-price">От 2500 ₽</span>
               <a class="product-card-button button_detailed" href="#">подробнее</a>
-              <a class="product-card-button button_favourites" href="#">в избранное</a>
+              <button class="product-card-button button_favourites" type="button">в избранное</button>
               <div class="stars">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -209,7 +247,7 @@
               <span class="text-price">Гостиница</span>
               <span class="product-card-price">От 1500 ₽</span>
               <a class="product-card-button button_detailed" href="#">подробнее</a>
-              <a class="product-card-button button_favourites" href="#">в избранное</a>
+              <button class="product-card-button button_favourites" type="button">в избранное</button>
               <div class="stars">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -266,13 +304,13 @@
             </li>
             <li class="footer-social-item">
               <a class="button" href=" https://t.me/htmlacademy">
-                <img class="footer-icon" src="images/tg.svg" width="24" height="14" alt="Телеграм">
+                <img class="footer-icon" src="images/tg.svg" width="18" height="16" alt="Телеграм">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button" href=" https://www.youtube.com/user/htmlacademyru">
-                <img class="footer-icon" src="images/youtube.svg" width="24" height="14" alt="Ютуб">
+                <img class="footer-icon" src="images/youtube.svg" width="22" height="17" alt="Ютуб">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>

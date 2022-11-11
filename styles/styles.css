@@ -111,6 +111,11 @@ ul {
   margin: 0;
   border: none;
   background-color: #FFF;
+  cursor: pointer;
+}
+
+.search:hover .navigation-link-icon {
+  fill: red;
 }
 
 .like {
@@ -122,15 +127,26 @@ ul {
   margin: 0;
   border: none;
   background-color: #FFF;
+  cursor: pointer;
 }
 
 .come_here {
   display: flex;
   border-radius: 4px;
-  background: #756157;
+  color: #FFF;
+  background-color: #756157;
   padding: 8px 34px;
   margin-left: 20px;
   margin-top: auto;
+}
+
+.come_here:hover {
+  background-color: #615048;
+}
+
+.come_here:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* MAIN */
@@ -150,6 +166,7 @@ main-container {
   background-position: 50% 100%;
   background-repeat: no-repeat;
   height: 485px;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -167,17 +184,18 @@ main-container {
   text-align: center;
   text-transform: uppercase;
   width: 730px;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 69px;
+  margin-bottom: 25px;
 }
 
 .reasons {
-  margin-left: 275px;
-  margin-right: 274px;
-  margin-top: 25px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 90px;
 }
-
 
 .text {
   font-weight: 400;
@@ -199,6 +217,15 @@ main-container {
 .help-text {
   text-align: center;
   margin: 0 auto;
+}
+
+.help-text::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 2px;
 }
 
 /*ADVATAGES*/
@@ -325,14 +352,13 @@ main-container {
 
 .apointment-title {
   padding: 0;
-  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 297px;
-  margin-top: 96px;
+  margin-top: 95px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -345,7 +371,6 @@ main-container {
   text-align: center;
   width: 592px;
   margin: 0;
-  margin-top: 20px;
   margin-left: 304px;
   margin-right: 304px;
   margin-bottom: 54px;
@@ -367,6 +392,15 @@ main-container {
   margin-bottom: 96px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.button-search:hover {
+  background-color: #615048;
+}
+
+.button-search:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*NEWSLETER*/
@@ -440,6 +474,15 @@ main-container {
   margin: 0;
 }
 
+.button.newsletter-button:hover {
+  background-color: #68A2CA;
+}
+
+.button.newsletter-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*FOOTER*/
 .page-footer {
   display: flex;
@@ -468,6 +511,14 @@ main-container {
   color: #000;
 }
 
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-social {
   display: flex;
   padding: 0;
@@ -483,6 +534,14 @@ main-container {
 
 .footer-icon {
   padding: 13px 12px;
+}
+
+.button-vk:hover .footer-icon {
+  fill: #756157;
+}
+
+.button-vk:hover .footer-icon {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /*CATALOG*/
@@ -638,6 +697,16 @@ main-container {
   margin-top: 56px;
   margin-bottom: 32px;
   padding: 8px 50px;
+  cursor: pointer;
+}
+
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+
+.button-apply:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-throw_off {
@@ -648,10 +717,25 @@ main-container {
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
-  border: 0;
+  background-color: transparent;
+  border: none;
   margin: 0;
   border-radius: 4px;
   padding: 8px 50px;
+  cursor: pointer;
+}
+
+.button-throw_off:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-throw_off:active {
+  color: rgba(221, 221, 221, 0.3);
+}
+
+.button-throw_off:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .selector {
@@ -665,24 +749,79 @@ main-container {
 
 .select-control {
   width: 292px;
+  height: 50px;
   padding: 0;
   margin-left: 192px;
   border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.select-control:hover {
+  outline: 2px solid #68A2CA;
+  ;
+}
+
+.select-control:active {
+  outline: 2px solid #3F5E72;
+  ;
 }
 
 .view {
+  display: flex;
   width: 160px;
+  height: 48px;
   padding: 0;
   margin-left: 70px;
 }
 
+.button-view {
+  display: block;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  flex-direction: column;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.catalog-icon {
+  padding: 17px 16px;
+}
+
+.button-light {
+  border: 2px solid #E5E5E5;
+}
+
+.view:last-of-type .button-view:last-of-type {
+  margin-right: 0;
+}
+
+.button-view:hover {
+  outline: 2px solid #000;
+}
+
+.button-view:active {
+  outline: 2px solid #000;
+}
+
+/*.button-view:focus {
+  outline: 2px solid #68A2CA;
+} */
+
+.catalog-icon {
+  padding: 17px 16px;
+}
+
 .inner-title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 36px;
   text-transform: uppercase;
+  align-self: center;
   color: #000;
-  width: 338px;
+  width: 340px;
+  height: 36px;
   padding: 0;
   margin: 0;
 }
@@ -777,6 +916,16 @@ main-container {
   width: 140px;
 }
 
+.product-card-button.button_detailed:hover {
+  background-color: #615048;
+}
+
+.product-card-button.button_detailed:active {
+  background-color: #756157;
+  ;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .product-card-button.button_favourites {
   font-weight: 700;
   font-size: 16px;
@@ -786,9 +935,20 @@ main-container {
   color: #FFF;
   background-color: #82B3D3;
   border-radius: 4px;
+  border: none;
   padding: 8px 0;
   text-decoration: none;
   width: 140px;
+  cursor: pointer;
+}
+
+.product-card-button.button_favourites:hover {
+  background-color: #68A2CA;
+}
+
+.product-card-button.button_favourites:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .text-rating {
@@ -861,6 +1021,16 @@ main-container {
   background-color: #82B3D3;
   text-decoration: none;
 }
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 
 .newsletter-catalog {
   justify-content: center;
