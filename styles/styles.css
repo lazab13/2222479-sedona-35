@@ -34,6 +34,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -89,8 +90,16 @@ ul {
   margin: 0 17px;
 }
 
-.navigation-item {
-  margin: 0 17px;
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  border: 2px solid #756257;
+  top: 44px;
 }
 
 .navigation-user {
@@ -107,7 +116,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 44px;
-  height: 100%;
+  height: 64px;
   margin: 0;
   border: none;
   background-color: #FFF;
@@ -119,15 +128,30 @@ ul {
 }
 
 .like {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
-  height: 100%;
+  height: 64px;
   margin: 0;
   border: none;
   background-color: #FFF;
   cursor: pointer;
+}
+
+.count-like {
+  position: absolute;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  padding: 5px 6px;
+  letter-spacing: -0.1em;
+  margin-top: -16px;
+  left: 20px;
 }
 
 .come_here {
@@ -219,14 +243,14 @@ main-container {
   margin: 0 auto;
 }
 
-.help-text::after {
+/*.help-text::after {
   content: '';
   position: absolute;
   top: 30px;
   bottom: 30px;
   width: 60px;
   height: 2px;
-}
+}*/
 
 /*ADVATAGES*/
 .advantages {
@@ -239,6 +263,7 @@ main-container {
 }
 
 .advantages-title-real_town {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -251,22 +276,41 @@ main-container {
   color: #FFF;
 }
 
+.advantages-title-real_town::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 86px;
+  left: 58px;
+}
+
 .advantages-title-devils_bridge {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 92px;
-  margin-left: 113px;
-  margin-right: 113px;
   margin-bottom: 0;
   color: #FFF;
+}
+
+.advantages-title-devils_bridge::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 86px;
+  left: 170px;
 }
 
 .advantages-description-real_town {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 21px;
   margin-top: 62px;
   margin-left: 85px;
@@ -287,9 +331,9 @@ main-container {
 }
 
 .advantages-title {
+  position: relative;
   margin: 0;
-  margin-bottom: 30px;
-  padding-bottom: 0;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -298,9 +342,23 @@ main-container {
   color: #000;
 }
 
+.decorative_element::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 86px;
+  left: 85px;
+}
+
+.decorative_element-none {
+  margin-bottom: 30px;
+}
+
 .advantages-description {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: #333;
@@ -345,7 +403,7 @@ main-container {
 }
 
 /*APOINTVENT*/
-.appointment {
+.apointment {
   margin: 0 auto;
   padding: 0;
 }
@@ -366,7 +424,7 @@ main-container {
 .text-appointment {
   padding: 0;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 26px;
   text-align: center;
   width: 592px;
@@ -403,6 +461,194 @@ main-container {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* POPOVER */
+.popover {
+  position: absolute;
+  left: 330px;
+  top: 396px;
+  box-sizing: border-box;
+  max-width: 717px;
+  background: #FFF;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 64px 70px;
+}
+
+.popover-head {
+  position: relative;
+  padding-right: 52px;
+}
+
+.popover-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.popover-close {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+.field-group.popover-form-date {
+  display: grid;
+  grid-template-columns: auto 440px;
+  grid-template-rows: 48px auto;
+  grid-gap: 4px;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.form-label {
+  grid-row: 1/ span 3;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 48px;
+  text-transform: capitalize;
+}
+
+.field-popover {
+  box-sizing: border-box;
+  width: 440px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 20px;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) 50%;
+}
+
+.popover-slider {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  height: 100%;
+  max-width: 110px;
+  text-align: center;
+}
+
+.slider-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 100%;
+}
+
+.number {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  max-width: 31px;
+  height: 100%;
+}
+
+.date-1 {
+  display: block;
+  width: 320px;
+  height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
+
+.date-2 {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.popover-form-piople-help {
+  display: flex;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+.field-group.popover-form-piople {
+  display: grid;
+  grid-template-columns: 113px 111px;
+  grid-template-rows: 48px;
+  grid-gap: 0 20px;
+  margin: 0;
+}
+
+.help-popover {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: capitalize;
+  align-self: center;
+}
+
+.popover-slaider-child {
+  position: relative;
+  display: grid;
+  grid-template-columns: 113px 111px;
+  grid-template-rows: 48px;
+  grid-gap: 0 20px;
+  margin: 0;
+}
+
+.popover-slaider-child-icon {
+  position: absolute;
+  top: 40px;
+  left: -30%;
+  display: none;
+}
+
+.popover-slaider-child-icon::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-bottom: 20px solid #333;
+  left: 40%;
+  top: -35px;
+}
+
+.popover-slaider-child-text {
+  width: 256px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFF;
+  background-color: #333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  margin: 0;
+}
+
+.popover-search {
+  width: 577px;
+  height: 60px;
+  background: #83B3D3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
 /*NEWSLETER*/
 .newsletter {
   background-image: url("../images/subscribe_background.png");
@@ -434,12 +680,12 @@ main-container {
 .text-newsletter {
   font-weight: 400;
   text-align: center;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 0;
   margin: 0;
   margin-top: 20px;
-  margin-left: 363px;
-  margin-right: 363px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .help-newsletter {
@@ -456,7 +702,7 @@ main-container {
   align-items: center;
   background-color: #F2F2F2;
   width: 452px;
-  border: 0;
+  border: none;
   padding: 12px 20px;
   margin: 0;
 }
@@ -489,7 +735,7 @@ main-container {
   padding: 40px 70px 30px;
   margin: 0 auto;
   justify-content: space-around;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 .page-footer-logo {
@@ -532,19 +778,33 @@ main-container {
   margin: 0;
 }
 
+.button-vk {
+  color: none;
+}
+
 .footer-icon {
+  fill: blue;
+  transition: fill 0.3s;
   padding: 13px 12px;
 }
 
-.button-vk:hover .footer-icon {
-  fill: #756157;
-}
-
-.button-vk:hover .footer-icon {
-  color: rgba(117, 97, 87, 0.3);
+.footer-icon:hover {
+  fill: red;
 }
 
 /*CATALOG*/
+.navigation-link-current-catalog {
+  position: relative;
+}
+
+.navigation-link-current-catalog::before {
+  position: absolute;
+  content: "";
+  width: 109px;
+  border: 2px solid #756257;
+  top: 44px;
+}
+
 .main-inner {
   background-color: #FFF;
 }
@@ -586,11 +846,16 @@ main-container {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  text-decoration: none;
   color: #FFF;
-  width: 114px;
+  min-width: 114px;
   padding: 0;
   margin: 0;
   padding-bottom: 40px;
+}
+
+.breadcrumbs-icon {
+  padding-right: 10px;
 }
 
 .catalog-products {
@@ -635,6 +900,7 @@ main-container {
   font-size: 20px;
   line-height: 24px;
   color: #FFF;
+  width: 150px;
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
@@ -652,7 +918,7 @@ main-container {
   padding: 0;
   margin: 0;
   width: 287px;
-  margin-left: 140px;
+  margin-left: 70px;
   margin-right: 70px;
 }
 
@@ -664,6 +930,7 @@ main-container {
   color: #FFFFFF;
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .price-help-2 {
@@ -676,10 +943,24 @@ main-container {
   justify-content: space-between;
   border-radius: 4px;
   overflow: hidden;
+  width: 287px;
+  height: 48px;
 }
 
 .input-help input {
   width: calc(50% - 1px);
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 0px;
+  border: 4px solid #FFFFFF;
+}
+
+.range-bar {
+  position: absolute;
+  opacity: 0.3;
 }
 
 .button-apply {
@@ -922,7 +1203,6 @@ main-container {
 
 .product-card-button.button_detailed:active {
   background-color: #756157;
-  ;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -940,6 +1220,31 @@ main-container {
   text-decoration: none;
   width: 140px;
   cursor: pointer;
+}
+
+.product-card-button.button_favourites_green {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #7DB54F;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 0;
+  text-decoration: none;
+  width: 140px;
+  cursor: pointer;
+}
+
+.product-card-button.button_favourites_green:hover {
+  background-color: #6C9E42;
+}
+
+.product-card-button.button_favourites_green:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-card-button.button_favourites:hover {
@@ -1058,8 +1363,8 @@ main-container {
   padding: 0;
   margin: 0;
   margin-top: 20px;
-  margin-left: 363px;
-  margin-right: 363px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .help-newsletter {

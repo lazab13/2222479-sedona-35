@@ -22,7 +22,7 @@
               <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li>
-              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current-catalog" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -37,6 +37,7 @@
             <li class="navigation-item">
               <button class="navigation-link like" type="button">
                 <img class="navigation-link-icon" src="images/heart.svg" width="20" height="20" alt="Избранное">
+                <span class="count-like">12</span>
               </button>
               <span class="visually-hidden">
                 Понравилось
@@ -53,7 +54,11 @@
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <section class="breadcrumbs">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link"  href="catalog.html">
+                <img class="breadcrumbs-icon" src="images/breadcrams_logo_1.svg" width="12" height="12">
+                <img class="breadcrumbs-icon" src="images/breadcrams_logo_2.svg" width="7" height="10">
+                Гостиницы
+              </a>
             </section>
           </header>
           <div class="catalog-filter-price">
@@ -112,6 +117,16 @@
                   <div class="input-help">
                     <input class="price" placeholder="От" type="number">
                     <input class="price" placeholder="До" type="number">
+                    <div class="range-scale">
+                      <div class="range-bar" style="right: 60px; width: 60px;">
+                        <button type="button" class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button  type="button" class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="price-help-2">
@@ -206,7 +221,7 @@
               <span class="text-price">Гостиница</span>
               <span class="product-card-price">От 5000 ₽</span>
               <a class="product-card-button button_detailed" href="#">подробнее</a>
-              <button class="product-card-button button_favourites" type="button">в избранное</button>
+              <button class="product-card-button button_favourites_green" type="button">в избранное</button>
               <div class="stars">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
                 <img class="rating-stars" src="images/rating_star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -281,7 +296,7 @@
         </section>
         <section class="newsletter-catalog">
           <h2 class="page-main-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="text-newsletter-catalog">Только полезная информация и никакого спама,честное бойскаутское!
+          <p class="text-newsletter-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"></form>
           <div class="help-newsletter">
