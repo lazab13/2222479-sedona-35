@@ -81,6 +81,7 @@ ul {
 }
 
 .navigation-list {
+  width: 339px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,7 +98,7 @@ ul {
   text-transform: capitalize;
   text-decoration: none;
   color: #000;
-  margin: 0 17px;
+  padding: 20px 16px;
 }
 
 .navigation-link-current {
@@ -109,16 +110,18 @@ ul {
   content: "";
   width: 70px;
   border: 2px solid #756257;
-  top: 44px;
+  top: 64px;
 }
 
 .navigation-user {
+  width: 268px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 100%;
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  margin-left: 280px;
 }
 
 .search {
@@ -128,6 +131,7 @@ ul {
   width: 44px;
   height: 64px;
   margin: 0;
+  padding: 22px 12px;
   border: none;
   background-color: #FFF;
   cursor: pointer;
@@ -193,7 +197,7 @@ ul {
 }
 
 .come_here:disabled {
-  background-color:#E5E5E5;
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -211,6 +215,7 @@ main-container {
 .baner {
   background-image: url("../images/fon_sedona_header.jpg");
   background-size: cover;
+  background-color: rgba(22, 83, 175, 0.2);
   background-position: 50% 100%;
   background-repeat: no-repeat;
   height: 485px;
@@ -270,7 +275,12 @@ main-container {
   text-align: center;
   margin: 0 auto;
   width: 400px;
-  height: 384px;
+}
+
+.picture {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
 /*ADVATAGES*/
@@ -333,10 +343,8 @@ main-container {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 62px;
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-bottom: auto;
+  margin: 0;
+  padding: 62px 85px 111px;
   color: #FFF;
 }
 
@@ -344,10 +352,8 @@ main-container {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 62px;
-  margin-left: 85px;
-  margin-right: 85px;
-  margin-bottom: auto;
+  margin: 0;
+  padding: 62px 85px 111px;
   color: #FFF;
 }
 
@@ -392,7 +398,6 @@ main-container {
 
 .advantages-item {
   padding: 80px 85px 81px 85px;
-  flex-grow: 1;
   flex-basis: 400px;
   min-height: 384px;
   box-sizing: border-box;
@@ -418,7 +423,6 @@ main-container {
   display: flex;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -439,6 +443,7 @@ main-container {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  max-width: 397px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 95px;
@@ -454,6 +459,7 @@ main-container {
   line-height: 26px;
   text-align: center;
   width: 592px;
+  color: #333;
   margin: 0;
   margin-left: 304px;
   margin-right: 304px;
@@ -486,8 +492,9 @@ main-container {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
-button-search:disabled {
-  background-color:#E5E5E5;
+
+.button-search:disabled {
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -506,7 +513,6 @@ button-search:disabled {
   padding-left: 75px;
   padding-right: 65px;
   padding-bottom: 64px;
-  padding: 67px 68x;
   display: none;
 }
 
@@ -546,15 +552,13 @@ button-search:disabled {
 
 .popover-close:hover {
   background-color: #E6E6E6;
-  ;
 }
 
 .popover-close:active {
   background-color: #E6E6E6;
-  ;
 }
 
-popover-close:focus {
+.popover-close:focus {
   border: 3px solid #83B3D3;
 }
 
@@ -581,9 +585,11 @@ popover-close:focus {
   height: 48px;
   background: #F2F2F2;
   border: none;
+  font-weight: 700;
   border-radius: 4px;
   font-size: 18px;
   line-height: 24px;
+  color: #000;
   padding: 0 20px;
   padding-right: 40px;
   background-image: url(../images/calendar.svg);
@@ -756,6 +762,7 @@ popover-close:focus {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  max-width: 404px;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
@@ -802,6 +809,7 @@ popover-close:focus {
   font-size: 18px;
   line-height: 24px;
   color: #000;
+  opacity: 0.6;
   border: none;
   padding: 12px 20px;
   margin: 0;
@@ -829,8 +837,8 @@ popover-close:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-button.newsletter-button:disabled {
-  background-color:#E5E5E5;
+.button.newsletter-button:disabled {
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -927,7 +935,7 @@ button.newsletter-button:disabled {
   content: "";
   width: 100px;
   border: 2px solid #756257;
-  top: 44px;
+  top: 64px;
 }
 
 .main-inner {
@@ -970,7 +978,7 @@ button.newsletter-button:disabled {
   display: flex;
 }
 
-.breadcrumbs-link{
+.breadcrumbs-link {
   display: block;
   font-weight: 400;
   font-size: 16px;
@@ -985,7 +993,7 @@ button.newsletter-button:disabled {
 .main {
   padding: 0;
   margin: 0;
-  padding-right: 10px;
+  padding-right: 5px;
   width: 15px;
 }
 
@@ -1066,7 +1074,7 @@ button.newsletter-button:disabled {
   position: relative;
   display: block;
   margin-left: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .control-label {
@@ -1094,8 +1102,9 @@ button.newsletter-button:disabled {
   border-radius: 50%;
 }
 
-.control:hover .control-mark {
+.control:hover .control-mark  {
   background-color: rgba(214, 213, 213, 0.603);
+  color: rgba(214, 213, 213, 0.603);
 }
 
 .control:active .control-mark {
@@ -1212,7 +1221,7 @@ button.newsletter-button:disabled {
 }
 
 .iprice:active {
-  outline:  2px solid #000;
+  outline: 2px solid #000;
 }
 
 .price:focus {
@@ -1241,7 +1250,7 @@ button.newsletter-button:disabled {
   position: relative;
   border: 2px solid #8b8787ea;
   top: -4px;
-  left: 186px;
+  left: 226px;
 }
 
 .range-toggle {
@@ -1255,13 +1264,13 @@ button.newsletter-button:disabled {
 }
 
 .toggle-min {
-  top: -10px;
-  left: 165px;
+  top: -12px;
+  left: 205px;
 }
 
 .toggle-max {
-  top: -10px;
-  left: -5px
+  top: -12px;
+  left: -2px
 }
 
 .range-toggle:hover {
@@ -1305,6 +1314,15 @@ button.newsletter-button:disabled {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button-apply:focus {
+  background-color: #82B3D3;
+}
+
+.button-apply:disabled {
+  background-color:  #E5E5E5;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-throw_off {
   width: 191px;
   font-weight: 700;
@@ -1332,6 +1350,11 @@ button.newsletter-button:disabled {
 .button-throw_off:focus {
   outline: 3px solid #83B3D3;
   border-radius: 4px;
+}
+
+.button-throw_off:disabled {
+  color: rgba(221, 221, 221, 0.3);
+  opacity: 0.1;
 }
 
 .selector {
@@ -1370,6 +1393,7 @@ button.newsletter-button:disabled {
   outline: 2px solid #68A2CA;
   ;
 }
+
 .select-contro:disabled {
   outline: 2px solid rgba(0, 0, 0, 0.3);
 }
@@ -1535,7 +1559,7 @@ button.newsletter-button:disabled {
 }
 
 .product-card-button.button_detailed:disabled {
-  background-color:#E5E5E5;
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1581,7 +1605,7 @@ button.newsletter-button:disabled {
 }
 
 .product-card-button.button_favourites_green:disabled {
-  background-color:#E5E5E5;
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1596,7 +1620,7 @@ button.newsletter-button:disabled {
 }
 
 .product-card-button.button_favourites:disabled {
-  background-color:#E5E5E5;
+  background-color: #E5E5E5;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1647,7 +1671,7 @@ button.newsletter-button:disabled {
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 11px 25px;
+  padding: 11px 11px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1664,7 +1688,8 @@ button.newsletter-button:disabled {
   height: 60px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 60px;
+  line-height: 36px;
+  padding: 11px 11px;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
@@ -1709,7 +1734,7 @@ button.newsletter-button:disabled {
   line-height: 26px;
   width: 475px;
   text-align: center;
-  color: #000;
+  color: #333;
   padding: 0;
   margin: 0;
   margin-top: 20px;
